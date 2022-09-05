@@ -5,75 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>健身網站資訊</title>
-    <style>
-        body{
-            background-color: cornsilk;
-            /* background-image: url(https://images2.gamme.com.tw/news2/2017/73/27/pZ_Uo52WlaCdqA.jpg); */
-            font-family: 微軟正黑體,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            
-        }
-        #container{
-            width: 75%;
-            margin: 12px auto;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="css/style.css">
 
-        h1{
-            text-align: center;
-            height: auto;
-            border-radius: 6px;
-            margin: 2px;
-        }
-        .workout{
-            text-align: left;
-        }
-        .indroduce{
-            font-size: 16px;
-            margin-top: 0;
-            
-            background-color: powderblue;
-            
-        }
-        .gain{
-            background-color: aqua;
-            border: solid;
-            border-radius: 3px;
-            text-align: left;
-        }
-        .title-10{
-            letter-spacing: 4rem;
-            text-align: center;
-            /* background-color:blueviolet ; */
-            /* color: #ffffff; */
-            height: 42px;    
-            line-height: 42px;        
-        }
-        .text-1{
-            color:brown; 
-            font-size: 24px;
-        }
-        .sub_title{
-            background-color:darkgoldenrod;
-            text-align: center;
-        }
-        ul{
-            text-decoration: none;
-            text-align: left;
-        }
-        ul a:hover{
-            color: chartreuse;
-        }
-        .toBMI{
-            text-align: left;
-        }
-        #image3{
-            background-color:burlywood;
-            padding: 3px;
-        }
-        #image3 img{
-            width: 30%;
-        }
-    </style>
 </head>
 <body>
 <div id="container">
@@ -161,7 +94,7 @@
 
     <hr>
     <h2 class="sub_title">每日需要多少熱量？</h2>
-    <table border="2" align="center">
+    <table border="2" id="main-table">
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -172,19 +105,19 @@
         </thead>
         <tbody>
             <tr>
-                <td>輕度工作</td>
+                <th>輕度工作</th>
                 <td>35大卡 X 目前體重（公斤）</td>
                 <td>40大卡 X 目前體重（公斤）</td>
                 <td>45大卡 X 目前體重（公斤）</td>
             </tr>
             <tr>
-                <td>中度工作</td>
+                <th>中度工作</th>
                 <td>30大卡 X 目前體重（公斤）</td>
                 <td>35大卡 X 目前體重（公斤）</td>
                 <td>40大卡 X 目前體重（公斤）</td>
             </tr>
             <tr>
-                <td>重度工作</td>
+                <th>重度工作</th>
                 <td>20~25大卡 X 目前體重（公斤）</td>
                 <td>30大卡 X 目前體重（公斤）</td>
                 <td>35大卡 X 目前體重（公斤）</td>
@@ -199,11 +132,11 @@
     </div>
     <br>
     <h2 class="sub_title" >公主殿下的影片</h2>
-    <!-- <iframe width="48%" height="400" src="https://www.youtube.com/embed/vB11847KoxA" title="「初音未來」演唱會【千本櫻】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="48%" height="400" src="https://www.youtube.com/embed/wJA8-Z6H5dM" title="Hatsune Miku Live Party (MikuPa) (Subtitles cc) [FULL HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <iframe width="48%" height="400" src="https://www.youtube.com/embed/vB11847KoxA" title="「初音未來」演唱會【千本櫻】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="48%" height="400" src="https://www.youtube.com/embed/wJA8-Z6H5dM" title="Hatsune Miku Live Party (MikuPa) (Subtitles cc) [FULL HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <hr>
     <h2 class="sub_title" >寫信給公主殿下</h2>
-    <div id="form">
+
     <form action="" method="post">
         <p>
         <label for="account">ACCOUNT</label>
@@ -213,7 +146,7 @@
         <label for="email">&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;</label>
         <input type="email" name="email" id="email">    
         </p>
-        <label for=""><b>想跟公主殿下說的話</b></label><br>
+        <label for=""><b>給公主殿下的悄悄話</b></label><br>
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <br>
         <button type="submit">確定</button>
@@ -221,7 +154,7 @@
 
 
     </form>
-    </div>
+
 </div>
 
 </body>
