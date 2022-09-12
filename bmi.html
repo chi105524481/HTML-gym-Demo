@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>計算BMI</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <style>
     form{
@@ -28,24 +29,29 @@
 </style>
 <body>
     <h1 class="sub_title">計算BMI</h1>
-    <form action="" method="post" >
+    <form action="">
         <p>
         <label for="">姓名</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name_i">
         </p>
         <p>
         <label for="height">身高</label>
-        <input type="number" name="height" id="height" required step="0.1">
+        <input type="number" name="height" id="height_i" required step="0.1">
         </p>
         <p>
         <label for="weight">體重</label>
-        <input type="number" name="weight" id="weight" required step="0.1">
+        <input type="number" name="weight" id="weight_i" required step="0.1">
         </p>
-        <button type="submit">確定</button>
+        <button type="submit" id="calc">確定</button>
+        <br>
+        <p id="comment">
+            BMI:<span class="bmi"></span><br>
+        </p>
         <br>
         <a href="./index.html">回首...掏!</a>
+
     </form>
-
-
+    
+    <script src="js/bmi.js"></script>
 </body>
 </html>
